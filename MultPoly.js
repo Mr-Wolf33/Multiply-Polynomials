@@ -19,9 +19,9 @@ function generateProblem() {
 function generatePolynomial(difficulty) {
     let terms = [];
     for (let i = 0; i < difficulty + 1; i++) {
-        let coefficient = Math.floor(Math.random() * 10) + 1; // Coefficents of x from 1 to 10
+        let coefficient1 = Math.floor(Math.random() * 2) + 1; // Coefficents of x from 1 to 2
         let exponent = Math.floor(Math.random() * 3) + 1; // Powers of x from 1 to 3
-        terms.push(`${coefficient}x^${exponent}`);
+        terms.push(`${coefficient1}x^${exponent}`);
     }
     return terms.join(" + ");
 }
